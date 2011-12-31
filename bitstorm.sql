@@ -19,7 +19,7 @@ CREATE TABLE `peer` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `hash` char(40) NOT NULL COMMENT 'peer_id',
   `user_agent` varchar(80) DEFAULT NULL,
-  `ip_address` mediumint(8) unsigned NOT NULL COMMENT 'ip',
+  `ip_address` int(10) unsigned NOT NULL COMMENT 'ip',
   `key` char(40) NOT NULL COMMENT 'key',
   `port` smallint(5) unsigned NOT NULL COMMENT 'port',
   PRIMARY KEY (`id`),
